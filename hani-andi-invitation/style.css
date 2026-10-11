@@ -1,0 +1,2031 @@
+@font-face {
+    font-family: 'Madina';
+    src: url('./assets/fonts/Madina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GaramondCustom';
+    src: url('./assets/fonts/GARA.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Operetta';
+    src: url('./assets/fonts/Operetta18-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaCustom';
+    src: url('./assets/fonts/Helvetica_3.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --orange: #df762d;
+    --cream: #fff6df;
+    --brown: #40261d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.hero-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 760px;
+
+    background-color: var(--orange);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+/* pattern floral samar */
+.pattern-top {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 1100px;
+
+    opacity: 0.5;
+
+    z-index: 1;
+}
+
+
+/* flower kiri dan kanan */
+.flower-side {
+    position: absolute;
+
+    top: -85px;
+
+    width: 500px;
+
+    z-index: 4;
+}
+
+/* flower kiri */
+.flower-side-left {
+    left: -75px;
+}
+
+
+/* flower kanan */
+.flower-side-right {
+    right: -75px;
+
+    transform: scaleX(-1);
+}
+
+/* ornament gantung tengah */
+.ornament-hanging {
+    position: absolute;
+
+    top: -85px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    z-index: 8;
+}
+
+
+/* content */
+.hero-content {
+    position: relative;
+
+    z-index: 10;
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+
+/* THE WEDDING OF */
+.hero-label {
+    font-family: 'Operetta', serif;
+
+    font-size: 25px;
+    letter-spacing: 6px;
+
+    color: var(--brown);
+
+    margin-bottom: 12px;
+}
+
+
+/* Hani & Andi */
+.hero-name {
+    font-family: 'Madina', cursive;
+
+    font-size: 100px;
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    color: #F6E19F;
+
+    margin: 0 0 22px;
+}
+
+
+/* tanggal */
+.hero-date {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 30px;
+    letter-spacing: 7px;
+
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--brown);
+    
+    margin-top: -25px;
+}
+
+.hero-monogram {
+    width: 170px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.hero-flower-left{
+    position: absolute;
+    bottom: -50px;
+    left: -230px;
+    width: 400px;
+    height: auto;
+
+    z-index: 6;
+}
+
+.hero-flower-right {
+    position: absolute;
+    bottom: -100px;
+
+    width: 400px;
+    height: auto;
+
+    z-index: 6;
+}
+
+.hero-flower-left {
+    left: -130px;
+}
+
+.hero-flower-right {
+    right: -70px;
+}
+
+.side-pattern {
+    position: absolute;
+
+    top: 52%;
+    transform: translateY(-50%);
+
+    height: 200%;
+    width: auto;
+
+    z-index: 1;
+    opacity:0.35;
+}
+
+.side-pattern-left {
+    left: 30px;
+}
+
+.side-pattern-right {
+    right: 30px;
+}
+
+/* HERO BACKGROUND LAYERS */
+
+/* texture kotak */
+.hero-background-kotak {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 2;
+
+    opacity: 1;
+
+    pointer-events: none;
+}
+
+
+/* shape / fade */
+.hero-background-fade {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 3;
+
+    opacity: 1;
+
+    pointer-events: none;
+}
+
+.quote-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 520px;
+
+    background-image: url("./assets/images/quoteframe.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 40px;
+
+    /* naik sedikit menimpa hero */
+    margin-top: -35px;
+
+    margin-bottom: 0;
+
+    z-index: 5;
+}
+
+.quote-bg {
+    position: absolute;
+
+    top: 100px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100% - 200px);
+
+    object-fit: fill;
+
+    pointer-events: none;
+}
+
+
+/* layer pertama */
+.quote-bg-kotak {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+/* layer kedua */
+.quote-bg-fade-1 {
+    z-index: 2;
+}
+
+
+/* layer ketiga */
+.quote-bg-fade-2 {
+    z-index: 3;
+}
+
+.quote-content {
+    position: relative;
+    z-index: 6;
+
+    max-width: 760px;
+
+    text-align: center;
+
+    color: #3f261b;
+}
+
+.quote-content p {
+    font-family: 'GaramondCustom', serif;
+    font-style: italic;
+
+    font-size: 27px;
+    line-height: 1.55;
+
+    margin: 0;
+}
+
+.quote-content span {
+    display: block;
+
+    font-family: 'GaramondCustom', serif;
+    font-style: italic;
+
+    font-size: 25px;
+
+    margin-top: 6px;
+}
+
+.quote-border-top {
+    position: absolute;
+    top: 15px;
+    left: -3px;
+
+    width: 100%;
+    display: flex;
+
+    z-index: 10;
+}
+
+.quote-border-left {
+    width: 58%;
+    height: auto;
+
+    display: block;
+    transform: translateX(1px);
+}
+
+.quote-border-right {
+    width: 58%;
+    height: auto;
+
+    display: block;
+    transform: translateX(3px);
+}
+
+.quote-border-bottom {
+    position: absolute;
+    bottom: 15px;
+    left: -3px;
+
+    width: 100%;
+    display: flex;
+
+    z-index: 10;
+}
+
+.quote-border-bottom-left {
+    width: 58%;
+    height: auto;
+
+    display: block;
+    transform: translateX(1px) scaleY(-1);
+}
+
+.quote-border-bottom-right {
+    width: 58%;
+    height: auto;
+
+    display: block;
+    transform: translateX(3px) scaleY(-1);
+}
+
+/* COUPLE / THE WEDDING SECTION */
+
+.couple-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 1050px;
+
+    background-color: var(--orange);
+
+    padding: 220px 100px 180px;
+
+    margin-top: -70px;
+
+    overflow: visible;
+
+    z-index: 0;
+}
+
+.couple-background-kotak {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.couple-background-fade {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.couple-ornament-top {
+    position: absolute;
+
+    top: -140px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 140%;
+    height: auto;
+
+    opacity: 0.55;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+/* ==========================
+   SIDE PATTERN
+========================== */
+
+.couple-side-pattern {
+    position: absolute;
+
+    top: 50%;
+
+    height: 85%;
+    width: auto;
+
+    transform: translateY(-50%);
+
+    opacity: 0.35;
+
+    z-index: 1;
+}
+
+.couple-side-left {
+    left: 30px;
+}
+
+.couple-side-right {
+    right: 30px;
+}
+
+
+/* CORNER FLOWERS */
+.couple-flower-left,
+.couple-flower-right {
+    position: absolute;
+
+    bottom: -180px;
+
+    width: 450px;
+    height: auto;
+
+    z-index: 2;
+}
+
+.couple-flower-left {
+    left: -230px;
+}
+
+.couple-flower-right {
+    right: -230px;
+}
+
+.couple-flower-mask {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.couple-content {
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: var(--brown);
+}
+
+
+/* Arab */
+.arabic-text {
+    font-family: serif;
+
+    font-size: 44px;
+
+    color: #f6e19f;
+
+    margin-bottom: 20px;
+}
+
+
+/* Greeting */
+.couple-greeting {
+    font-family: 'GaramondCustom', serif;
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Intro */
+.couple-intro {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 25px;
+
+    line-height: 1.5;
+
+    margin-bottom: 50px;
+}
+
+
+/* ==========================
+   BRIDE & GROOM GRID
+========================== */
+
+.couple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    max-width: 900px;
+
+    margin: 0 auto 60px;
+}
+
+
+.person-card {
+    text-align: center;
+}
+
+
+/* photo */
+.person-photo {
+    width: 170px;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 90px 90px 45px 45px;
+
+    margin-bottom: 25px;
+}
+
+
+/* name */
+.person-name {
+    font-family: 'Madina', cursive;
+
+    font-size: 63px;
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    color: #f6e19f;
+
+    margin: 0;
+}
+
+.person-degree-inline {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: #f6e19f;
+
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+
+/* degree */
+.person-degree {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 18px;
+
+    margin-top: 6px;
+}
+
+
+/* parents */
+.person-parent {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+
+    margin-top: 22px;
+}
+
+
+/* & */
+.couple-symbol {
+    font-family: 'Madina', cursive;
+
+    font-size: 80px;
+
+    color: #f6e19f;
+
+    transform: translateY(-100px);
+}
+
+
+/* CLOSING */
+
+.couple-closing {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+
+    margin-top: 40px;
+}
+
+
+.couple-closing-greeting {
+    font-family: 'GaramondCustom', serif;
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* ==========================
+   BOTTOM ORNAMENT 5x
+========================== */
+
+.couple-bottom-ornaments {
+    position: absolute;
+
+    bottom: -55px;
+    left: 0;
+
+    width: 100%;
+    height: 220px;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.bottom-ornament {
+    position: absolute;
+
+    width: 260px;
+    height: auto;
+
+    opacity: 0.55;
+
+    transform: scaleY(-1);
+}
+
+
+.bottom-1 {
+    left: -40px;
+}
+
+.bottom-2 {
+    left: 20%;
+}
+
+.bottom-3 {
+    left: 50%;
+
+    transform: translateX(-50%) scaleY(-1);
+}
+
+.bottom-4 {
+    right: 20%;
+}
+
+.bottom-5 {
+    right: -40px;
+}
+
+.bismillah-image {
+    width: 220px;
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+/* COUNTDOWN SECTION */
+
+.countdown-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 360px;
+
+    background-color: #f6f2e8;
+    
+    padding: 95px 40px 95px;
+
+    text-align: center;
+
+    overflow: visible;
+
+    z-index: 10;
+}
+
+.countdown-background-ornament {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.countdown-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* border atas */
+.countdown-top-border {
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+    transform: translateY(-50%);
+
+    z-index: 3;
+}
+
+/* border bawah */
+.countdown-bottom-border {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    transform: translateY(50%) scaleY(-1);
+
+    z-index: 20;
+}
+
+/* tanggal - Baskerville */
+.countdown-date {
+    font-family: Baskerville, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    color: #4a2c20;
+
+    margin-bottom: 28px;
+}
+
+/* wrapper box */
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* kotak countdown */
+.countdown-box {
+    width: 80px;
+    height: 80px;
+
+    background-color: #dd7b33;
+    border-radius: 6px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* angka - Garamond */
+.countdown-number {
+    font-family: 'GaramondCustom', serif;
+    font-size: 35px;
+    line-height: 1;
+    color: #fffaf0;
+}
+
+/* label - Garamond */
+.countdown-label {
+    font-family: 'GaramondCustom', serif;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #fffaf0;
+
+    margin-top: 4px;
+}
+
+/* ==========================
+   LOCATION SECTION
+========================== */
+
+.location-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 950px;
+
+    background-color: var(--orange);
+
+    margin-top: -20px;
+
+    padding: 130px 60px 140px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--brown);
+
+    z-index: 1;
+}
+
+.location-divider {
+    display: block;
+
+    width: 200px;
+    max-width: 100%;
+
+    margin: 10px auto 30px;
+}
+
+.location-background-kotak {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+/* TOP FLOWERS */
+
+.location-flower-top {
+    position: absolute;
+
+    top: -70px;
+
+    width: 700px;
+    height: auto;
+
+    opacity: 1;
+
+    z-index: 8;
+}
+
+.location-flower-top-left {
+    left: -220px;
+}
+
+.location-flower-top-right {
+    right: -220px;
+}
+
+
+/* ==========================
+   BOTTOM FLOWERS
+========================== */
+
+.location-flower-bottom {
+    position: absolute;
+
+    bottom: -80px;
+
+    width: 700px;
+    height: auto;
+
+    opacity: 1;
+
+    z-index: 8;
+
+    transform: scaleY(-1);
+}
+
+.location-flower-bottom-left {
+    left: -220px;
+}
+
+.location-flower-bottom-right {
+    right: -220px;
+}
+
+
+/* SIDE PATTERN */
+
+.location-side-pattern {
+    position: absolute;
+
+    top: 50%;
+
+    height: 85%;
+    width: auto;
+
+    transform: translateY(-50%);
+
+    opacity: 0.35;
+
+    z-index: 1;
+}
+
+.location-side-left {
+    left: 30px;
+}
+
+.location-side-right {
+    right: 30px;
+}
+
+.location-background-fade {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+
+/* CONTENT */
+
+.location-content {
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* title */
+.location-title {
+    font-family: 'Madina', cursive;
+
+    font-size: 84px;
+    font-weight: normal;
+
+    color: #f6e19f;
+
+    margin-bottom: 35px;
+}
+
+
+/* image venue */
+.location-image {
+    width: 460px;
+    max-width: 80%;
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 30px;
+}
+
+
+/* venue name */
+.location-name {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 28px;
+    line-height: 1.2;
+
+    color: #f6e19f;
+
+    margin-bottom: 12px;
+}
+
+
+/* address */
+.location-address {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+/* button */
+.location-button {
+    display: inline-block;
+
+    padding: 12px 32px;
+
+    background-color: #f6e19f;
+
+    color: var(--brown);
+
+    text-decoration: none;
+
+    font-family: 'GaramondCustom', serif;
+    font-size: 18px;
+
+    border-radius: 30px;
+
+    margin-bottom: 45px;
+}
+
+
+/* schedule */
+.location-schedule {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 90px;
+}
+
+.schedule-item h4 {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 24px;
+
+    color: #f6e19f;
+
+    margin-bottom: 10px;
+}
+
+.schedule-item p {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 19px;
+}
+
+/* GALLERY + RSVP SECTION */
+
+.gallery-rsvp-section {
+    position: relative;
+
+    width: 100%;
+
+    background-color: var(--orange);
+
+    overflow: hidden;
+}
+
+
+/* GALLERY TOP */
+
+.gallery-top {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+}
+
+.gallery-top-image {
+    width: 100%;
+    height: 540px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ==========================
+   GALLERY BOTTOM
+========================== */
+
+.gallery-bottom {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    min-height: 720px;
+}
+
+/* FOTO BESAR */
+
+.gallery-large-wrapper {
+    width: 100%;
+    height: 720px;
+
+    overflow: hidden;
+}
+
+.gallery-large-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 90%;
+
+    display: block;
+}
+
+/* ==========================
+   RSVP PANEL
+========================== */
+
+.rsvp-panel {
+    position: relative;
+
+    height: 720px;
+
+    background-color: #f6f2e8;
+
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: var(--brown);
+
+    overflow: hidden;
+}
+
+.rsvp-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+}
+
+.rsvp-pattern {
+    position: absolute;
+
+    left: 50%;
+
+    width: 175%;
+    height: auto;
+
+    opacity: 0.32;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* pattern bagian atas */
+.rsvp-pattern-top {
+    top: -80px;
+
+    opacity: 1;
+
+    transform: translateX(-50%) scaleY(-1);
+}
+
+
+/* pattern bagian bawah */
+.rsvp-pattern-bottom {
+    bottom: -80px;
+
+    opacity: 1;
+
+    transform: translateX(-50%);
+}
+
+.rsvp-title {
+    font-family: 'Madina', cursive;
+    font-size: 64px;
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
+
+.rsvp-name {
+    font-family: 'GaramondCustom', serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.rsvp-description {
+    font-family: 'GaramondCustom', serif;
+    font-size: 20px;
+    line-height: 1.4;
+
+    margin-bottom: 28px;
+}
+
+.rsvp-choice {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+}
+
+
+.rsvp-button {
+    min-width: 90px;
+
+    padding: 9px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #f0d58c;
+
+    color: var(--brown);
+
+    font-family: 'GaramondCustom', serif;
+
+    cursor: pointer;
+}
+
+
+.rsvp-button.active {
+    background-color: #c7a354;
+
+    color: white;
+}
+
+
+/* label */
+
+.rsvp-label {
+    font-family: 'GaramondCustom', serif;
+    font-size: 20px;
+
+    margin: 12px 0 14px;
+}
+
+
+/* event buttons */
+
+.rsvp-events {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.rsvp-event {
+    min-width: 90px;
+
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #f0d58c;
+
+    color: var(--brown);
+
+    font-family: 'GaramondCustom', serif;
+
+    cursor: pointer;
+}
+
+
+.rsvp-event.active {
+    background-color: #c7a354;
+
+    color: white;
+}
+
+
+/* jumlah tamu */
+
+.guest-count-wrapper {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 45px;
+}
+
+
+.guest-count {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.guest-count label {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 15px;
+}
+
+
+.guest-count select {
+    padding: 5px 9px;
+
+    border: 1px solid #ddd;
+
+    background-color: white;
+
+    font-family: 'GaramondCustom', serif;
+}
+
+
+/* submit */
+
+.rsvp-submit {
+    min-width: 90px;
+
+    padding: 10px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #c7a354;
+
+    color: white;
+
+    font-family: 'GaramondCustom', serif;
+
+    cursor: pointer;
+}
+
+.gallery-rsvp-inner {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 auto;
+}
+
+.rsvp-divider-image {
+    display: block;
+
+    width: 150px;
+    height: auto;
+
+    margin: 8px auto 24px;
+}
+
+/* WISHES SECTION */
+.wishes-section {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 1100px;
+
+    background-color: var(--orange);
+
+    padding: 160px 120px 180px;
+}
+
+.wishes-background-kotak {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.wishes-background-fade {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.wishes-mix-ornament {
+    position: absolute;
+
+    top: 0px;
+    left: 51%;
+
+    transform: translateX(-50%);
+
+    width: 125%;
+    height: auto;
+
+    z-index: 8;
+
+    pointer-events: none;
+}
+
+/* semua bunga */
+.wishes-flower {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    z-index: 8;
+    pointer-events: none;
+}
+
+/* atas kiri */
+.wishes-flower-top-left {
+    top: -450px;
+    left: -95px;
+
+    transform: scaleY(-1);
+}
+
+/* atas kanan */
+.wishes-flower-top-right {
+    top: -450px;
+    right: -95px;
+
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.wishes-bottom {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    z-index: 8;
+    pointer-events: none;
+}
+
+/* bawah kiri */
+.wishes-bottom-left {
+    bottom: -120px;
+    left: -180px;
+}
+
+/* bawah kanan */
+.wishes-bottom-right {
+    bottom: -120px;
+    right: -180px;
+}
+
+.wishes-content {
+    position: relative;
+    z-index: 5;
+
+    max-width: 620px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    top: 30px;
+}
+
+/* ==========================
+   ORNAMENT TENGAH
+========================== */
+
+.wishes-middle-ornament {
+    position: absolute;
+
+    left: 50%;
+
+    width: 500px;
+    height: auto;
+
+    opacity: 0.55;
+
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+
+.wishes-middle-top {
+    top: -100px;
+
+    transform: translateX(-50%) scaleY(-1);
+}
+
+
+.wishes-middle-bottom {
+    bottom: 0px;
+
+    transform: translateX(-50%);
+}
+
+.wishes-title {
+    font-family: 'Madina', cursive;
+    font-size: 52px;
+    font-weight: normal;
+    color: #f6e19f;
+
+    margin-bottom: 10px;
+}
+
+.wishes-divider {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 28px;
+}
+
+.wishes-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.wishes-input,
+.wishes-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    padding: 14px 16px;
+
+    font-family: 'GaramondCustom', serif;
+    font-size: 16px;
+
+    background: #ffffff;
+    color: var(--brown);
+
+    border-radius: 4px;
+}
+
+.wishes-textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.wishes-upload-label {
+    font-family: 'GaramondCustom', serif;
+    font-size: 18px;
+    color: var(--brown);
+
+    margin-top: 4px;
+}
+
+.wishes-upload-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    min-height: 48px;
+
+    background: #ffffff;
+    padding: 10px 14px;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #caa64a;
+    color: #fff;
+
+    border-radius: 2px;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.upload-text {
+    font-family: 'GaramondCustom', serif;
+    font-size: 15px;
+    color: #8c8c8c;
+}
+
+.wishes-send-btn {
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+
+    padding: 14px 20px;
+
+    background: #cfb05a;
+    color: #fff;
+
+    font-family: 'GaramondCustom', serif;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+
+.wishes-message-preview {
+    margin-top: 28px;
+    padding: 14px 0;
+
+    text-align: left;
+
+    border-top: 1px solid rgba(64, 38, 29, 0.4);
+    border-bottom: 1px solid rgba(64, 38, 29, 0.4);
+
+    color: var(--brown);
+    font-family: 'GaramondCustom', serif;
+}
+
+.wishes-message-preview p {
+    margin-top: 4px;
+}
+
+.wishes-see-btn {
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+
+    padding: 14px 20px;
+
+    margin-top: 18px;
+
+    background: #f3dc93;
+    color: var(--brown);
+
+    font-family: 'GaramondCustom', serif;
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.wishes-side-pattern {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 82%;
+    width: auto;
+
+    opacity: 0.35;
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+.wishes-side-left {
+    left: 38px;
+}
+
+.wishes-side-right {
+    right: 38px;
+}
+
+/* THANK YOU SECTION */
+
+.thankyou-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 620px;
+
+    background-image: url("./assets/images/quoteframe.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 150px 40px 80px;
+
+    margin-top: -85px;
+
+    overflow: hidden;
+
+    color: var(--brown);
+
+    z-index: 10;
+}
+
+.thankyou-background-inner {
+    position: absolute;
+
+    top: 40px;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.thankyou-border-top {
+    position: absolute;
+
+    top: 15px;
+    left: -3px;
+
+    width: 100%;
+    display: flex;
+
+    z-index: 20;
+}
+
+.thankyou-border-left {
+    width: 58%;
+    height: auto;
+
+    display: block;
+
+    transform: translateX(1px);
+}
+
+.thankyou-border-right {
+    width: 58%;
+    height: auto;
+
+    display: block;
+
+    transform: translateX(3px);
+}
+
+.thankyou-background-kotak {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.thankyou-background-fade {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+
+
+/* CONTENT */
+
+.thankyou-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.thankyou-title {
+    font-family: 'Madina', cursive;
+
+    font-size: 58px;
+    font-weight: normal;
+
+    color: var(--brown);
+
+    margin: 0 0 18px;
+}
+
+
+.thankyou-text {
+    font-family: 'GaramondCustom', serif;
+
+    font-size: 22px;
+    line-height: 1.4;
+
+    color: var(--brown);
+
+    margin: 0;
+}
+
+
+/* CONNECTIED LOGO */
+
+.connectied-logo {
+    display: block;
+
+    width: 100px;
+    height: auto;
+
+    margin: 90px auto 0;
+}
+
+
+/* FLOWER KIRI & KANAN */
+
+.thankyou-flower {
+    position: absolute;
+
+    width: 450px;
+    height: auto;
+
+    top: 56%;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.thankyou-flower-left {
+    top: 350px;
+    left: -156px;
+
+    transform: translateY(-50%);
+}
+
+.thankyou-flower-right {
+    top: 350px;
+    right: -156px;
+
+    transform: translateY(-50%);
+}
+
+/* 3. PATTERN BAWAH */
+
+.thankyou-pattern-bottom {
+    position: absolute;
+
+    left: 50%;
+    bottom: -100px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: auto;
+
+    opacity: 1;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
