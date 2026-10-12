@@ -49,10 +49,69 @@
     <!-- Fancybox 3.5.7 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-    <!-- JS kamu -->
+    <!-- JS -->
     <script src="script.js"></script>
 
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/wedding-song.mp3" type="audio/mpeg">
+    </audio>
+
+
+
 <body>
+
+<nav class="top-navbar">
+    <a href="#home">HOME</a>
+    <a href="#wedding">THE WEDDING</a>
+    <a href="#location">LOCATION</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#messages">PERSONAL MESSAGES</a>
+</nav>
+
+<section class="invitation-cover" id="invitationCover">
+
+    <div class="cover-card">
+
+        <img
+            src="assets/images/couplelarge.jpg"
+            class="cover-photo"
+            alt="Hani and Andi"
+        >
+
+        <div class="cover-content">
+
+            <p class="cover-label">
+                THE WEDDING OF
+            </p>
+
+            <h1 class="cover-name">
+                Hani & Andi
+            </h1>
+
+            <p class="cover-dear">
+                Dear,<br>
+                <span>Our Beloved Guest</span>
+            </p>
+
+            <p class="cover-text">
+                We joyfully invite you<br>
+                to share in our special day.
+            </p>
+
+            <button
+                type="button"
+                class="open-invitation-btn"
+                id="openInvitation"
+            >
+                Open Invitation
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 
 <section id="home" class="hero-section" data-aos="fade-up">
 
@@ -61,6 +120,8 @@
         src="assets/images/flower1.png"
         class="flower-side flower-side-left"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <!-- Ornament gantung -->
@@ -68,6 +129,8 @@
         src="assets/images/flower2.png"
         class="ornament-hanging"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <!-- Flower kanan -->
@@ -75,12 +138,16 @@
         src="assets/images/flower1.png"
         class="flower-side flower-side-right"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <img
-    src="assets/images/segitiga-kiri.png"
-    class="side-pattern side-pattern-left"
-    alt=""
+        src="assets/images/segitiga-kiri.png"
+        class="side-pattern side-pattern-left"
+        alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <img
@@ -106,6 +173,8 @@
         src="assets/images/hero-flower-left.png"
         class="hero-flower-left"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <!-- Bunga bawah kanan -->
@@ -113,27 +182,27 @@
         src="assets/images/hero-flower-right.png"
         class="hero-flower-right"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
+    <div class="hero-content">
 
+        <img
+            src="assets/images/monogram.png"
+            class="hero-monogram hero-zoom-item hero-zoom-1"
+            alt="Hani and Andi"
+        >
 
-    <div class="hero-content" data-aos="fade-up">
-
-    <img
-        src="assets/images/monogram.png"
-        class="hero-monogram"
-        alt="Hani and Andi"
-    >
-
-        <p class="hero-label">
+        <p class="hero-label hero-zoom-item hero-zoom-2">
             THE WEDDING OF
         </p>
 
-        <h1 class="hero-name">
+        <h1 class="hero-name hero-zoom-item hero-zoom-3">
             Hani & Andi
         </h1>
 
-        <p class="hero-date">
+        <p class="hero-date hero-zoom-item hero-zoom-4">
             19.09.26
         </p>
 
@@ -141,7 +210,7 @@
 
 </section>
 
-<section class="quote-section">
+<section class="quote-section"  data-aos="fade-up">
 
     <!-- motif kotak -->
     <img
@@ -165,7 +234,7 @@
     >
 
     <!-- border atas -->
-    <div class="quote-border-top" data-aos="fade-down">
+    <div class="quote-border-top">
         <img
             src="assets/images/quote-border-left.png"
             class="quote-border-left"
@@ -179,7 +248,7 @@
         >
     </div>
 
-    <div class="quote-content" data-aos="fade-up">
+    <div class="quote-content">
         <p>
             “Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia
             menciptakan pasangan-pasangan untukmu dari (jenis)
@@ -194,7 +263,7 @@
         </span>
     </div>
 
-    <div class="quote-border-bottom" data-aos="fade-up">
+    <div class="quote-border-bottom">
         <img
             src="assets/images/quote-border-left.png"
             class="quote-border-bottom-left"
@@ -216,6 +285,8 @@
         src="assets/images/background-kotak.png"
         class="couple-background-kotak"
         alt=""
+        data-aos="fade-up"
+        data-aos-delay="100"
     >
 
     <img
@@ -231,9 +302,7 @@
         alt=""
     >
 
-    <!-- =====================
-         SIDE PATTERN
-    ====================== -->
+    <!-- SIDE PATTERN-->
     <img
         src="assets/images/segitiga-kiri.png"
         class="couple-side-pattern couple-side-left"
@@ -288,18 +357,20 @@
             <!-- BRIDE -->
             <div class="person-card">
 
-                <img
-                    src="assets/images/bride.jpg"
-                    class="person-photo"
-                    alt="Hani"
-                >
+                <div class="person-photo-frame" data-aos="fade-up" data-aos-delay="100">
+                    <img
+                        src="assets/images/bride.jpg"
+                        class="person-photo bride-photo"
+                        alt="Hani"
+                    >
+                </div>
 
-                <h2 class="person-name">
+                <h2 class="person-name" data-aos="fade-up" data-aos-delay="100">
                     Hani Dandian<br>
                     Irawan<span class="person-degree-inline">, S. E., BBusMan.</span>
                 </h2>
 
-                <p class="person-parent">
+                <p class="person-parent" data-aos="fade-up" data-aos-delay="100">
                     Putri dari<br>
                     Bapak Ir. H. Panji Irawan, M.M.<br>
                     & Ibu Dewi Seri Rezeki
@@ -309,7 +380,7 @@
 
 
             <!-- AMPERSAND -->
-            <div class="couple-symbol">
+            <div class="couple-symbol" data-aos="fade-up" data-aos-delay="100">
                 &
             </div>
 
@@ -317,18 +388,20 @@
             <!-- GROOM -->
             <div class="person-card">
 
-                <img
-                    src="assets/images/groom.jpg"
-                    class="person-photo"
-                    alt="Andi"
-                >
+                <div class="person-photo-frame" data-aos="fade-up" data-aos-delay="100">
+                    <img
+                        src="assets/images/groom.jpg"
+                        class="person-photo groom-photo"
+                        alt="Andi"
+                    >
+                </div>
 
-                <h2 class="person-name">
+                <h2 class="person-name" data-aos="fade-up" data-aos-delay="100">
                     Andi William Ade<br>
                     Putra Malau<span class="person-degree-inline">, S. E.</span>
                 </h2>
 
-                <p class="person-parent">
+                <p class="person-parent" data-aos="fade-up" data-aos-delay="100">
                     Putra dari<br>
                     (Alm.) Bapak Ir. Marlon Malau, M.M.<br>
                     & Ibu Andi Nuraedah
@@ -339,16 +412,14 @@
         </div>
 
 
-        <!-- =====================
-             CLOSING TEXT
-        ====================== -->
-        <p class="couple-closing" data-aos="fade-down">
+        <!-- CLOSING TEXT -->
+        <p class="couple-closing" data-aos="fade-up" data-aos-delay="100">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>
             apabila Bapak/Ibu/Saudara/i berkenan hadir<br>
             serta memberikan doa restu.
         </p>
 
-        <p class="couple-closing-greeting" data-aos="fade-down">
+        <p class="couple-closing-greeting" data-aos="fade-up" data-aos-delay="100">
             Wassalamu’alaikum Warahmatullahi Wabarakatuh
         </p>
 
@@ -377,7 +448,7 @@
             SABTU, 19 SEPTEMBER 2026
         </h2>
 
-        <div class="countdown-wrapper">
+        <div class="countdown-wrapper d-flex justify-content-center flex-wrap">
 
             <div class="countdown-box">
                 <span class="countdown-number" id="days">00</span>
@@ -411,12 +482,14 @@
 
 </section>
 
-<section class="location-section"   data-aos="fade-down">
+<section id="location" class="location-section"  data-aos="fade-down">
 
     <img
         src="assets/images/background-kotak.png"
         class="location-background-kotak"
         alt=""
+        data-aos="fade-up"
+        data-aos-delay="100"
     >
 
 
@@ -433,10 +506,6 @@
         alt=""
     >
 
-    <!-- =====================
-         BACKGROUND FADE
-         DI ATAS SEGITIGA
-    ====================== -->
     <img
         src="assets/images/location-background-fade.png"
         class="location-background-fade"
@@ -448,18 +517,22 @@
         src="assets/images/location-flower-left.png"
         class="location-flower-top location-flower-top-left"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <img
         src="assets/images/location-flower-right.png"
         class="location-flower-top location-flower-top-right"
         alt=""
+        data-aos="fade-down"
+        data-aos-delay="100"
     >
 
     <!-- CONTENT -->
     <div class="location-content">
 
-        <h2 class="location-title">
+        <h2 class="location-title" data-aos="fade-up" data-aos-delay="100">
             Lokasi
         </h2>
 
@@ -467,35 +540,39 @@
             src="assets/images/location-divider.png"
             class="location-divider"
             alt=""
+            data-aos="fade-up"
+            data-aos-delay="100"
         >
     
         <img
             src="assets/images/Intercontinental.png"
             class="location-image"
             alt="InterContinental Hotel Jakarta Pondok Indah"
+            data-aos="fade-up"
+            data-aos-delay="100"
         >
 
-        <h3 class="location-name">
+        <h3 class="location-name" data-aos="fade-up" data-aos-delay="100">
             InterContinental Hotel Jakarta<br>
             Pondok Indah
         </h3>
 
-        <p class="location-address">
+        <p class="location-address" data-aos="fade-up" data-aos-delay="100">
             Jl. Metro Pondok Indah Kav. IV TA, Jakarta 12310
         </p>
 
-        <a href="#" class="location-button">
+        <a href="#" class="location-button" data-aos="fade-up" data-aos-delay="100">
             Arahkan ke Lokasi
         </a>
 
-        <div class="location-schedule">
+        <div class="location-schedule d-flex justify-content-center align-items-start">
 
-            <div class="schedule-item">
+            <div class="schedule-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Akad Nikah</h4>
                 <p>13.30 WIB</p>
             </div>
 
-            <div class="schedule-item">
+            <div class="schedule-item" data-aos="fade-up" data-aos-delay="100">
                 <h4>Resepsi Pernikahan</h4>
                 <p>19.00-21.00 WIB</p>
             </div>
@@ -519,59 +596,91 @@
 
 </section>
 
-<!--GALLERY + RSVP SECTION-->
-<section class="gallery-rsvp-section">
+<!--GALLERY + RSVP-->
+<section id="gallery" class="gallery-rsvp-section">
 
     <div class="gallery-rsvp-inner" >
 
-    <!-- BARIS FOTO ATAS -->
-    <div class="gallery-top" data-aos="slide-right">
+    <!-- BARIS FOTO ATAS - SWIPER -->
+    <div class="swiper weddingSwiper" data-aos="fade-up">
 
-        <img
-            src="assets/images/gallery1.png"
-            class="gallery-top-image"
-            alt=""
-        >
+        <div class="swiper-wrapper">
 
-        <img
-            src="assets/images/gallery2.png"
-            class="gallery-top-image"
-            alt=""
-        >
+            <!-- 1 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery1.png" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery1.png" alt="">
+                </a>
+            </div>
 
-        <img
-            src="assets/images/gallery3.jpg"
-            class="gallery-top-image"
-            alt=""
-        >
+            <!-- 2 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery2.png" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery2.png" alt="">
+                </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery3.jpg" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- 4 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery1.png" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery1.png" alt="">
+                </a>
+            </div>
+
+            <!-- 5 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery2.png" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery2.png" alt="">
+                </a>
+            </div>
+
+            <!-- 6 -->
+            <div class="swiper-slide">
+                <a href="assets/images/gallery3.jpg" data-fancybox="wedding-gallery">
+                    <img src="assets/images/gallery3.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
     </div>
 
-
     <!-- BARIS BAWAH -->
-    <div class="gallery-bottom" data-aos="slide-left">
+    <div class="gallery-bottom" data-aos="fade-up">
 
         <!-- FOTO BESAR KIRI -->
         <div class="gallery-large-wrapper">
-            <img
-                src="assets/images/couplelarge.jpg"
-                class="gallery-large-image"
-                alt=""
+            <a
+                href="assets/images/couplelarge.jpg"
+                data-fancybox="wedding-gallery"
+                class="gallery-large-wrapper"
             >
+                <img
+                    src="assets/images/couplelarge.jpg"
+                    class="gallery-large-image"
+                    alt="Wedding Gallery"
+                >
+            </a>
         </div>
 
+<div id="rsvp" class="rsvp-panel" data-aos="fade-up">
 
-<!-- RSVP KANAN -->
-<div class="rsvp-panel" data-aos="slide-left">
-
-    <!-- PATTERN ATAS -->
     <img
         src="assets/images/patternbackground.png"
         class="rsvp-pattern rsvp-pattern-top"
         alt=""
     >
 
-    <!-- SEMUA ISI RSVP -->
     <div class="rsvp-content">
 
         <h2 class="rsvp-title">
@@ -594,8 +703,7 @@
         </p>
 
 
-        <!-- HADIR / TIDAK HADIR -->
-        <div class="rsvp-choice">
+        <div class="rsvp-choice d-flex justify-content-center">
 
             <button type="button" class="rsvp-button active">
                 Hadir
@@ -612,7 +720,7 @@
             Pilihan acara yang akan dihadiri
         </p>
 
-        <div class="rsvp-events">
+        <div class="rsvp-events d-flex justify-content-center flex-wrap">
 
             <button type="button" class="rsvp-event">
                 Akad<br>Nikah
@@ -633,7 +741,7 @@
             Jumlah yang akan hadir
         </p>
 
-        <div class="guest-count-wrapper">
+        <div class="guest-count-wrapper d-flex justify-content-center flex-wrap">
 
             <div class="guest-count">
 
@@ -679,8 +787,6 @@
 
     </div>
 
-
-    <!-- PATTERN BAWAH -->
     <img
         src="assets/images/patternbackground.png"
         class="rsvp-pattern rsvp-pattern-bottom"
@@ -692,7 +798,7 @@
 
 </section>
 
-<section class="wishes-section" data-aos="fade-down">
+<section id="messages" class="wishes-section" data-aos="fade-down">
 
     <img
         src="assets/images/background-kotak.png"
@@ -746,12 +852,14 @@
     >
 
     <div class="wishes-content">
-        <h2 class="wishes-title">Wedding Wishes</h2>
+        <h2 class="wishes-title" data-aos="fade-up">Wedding Wishes</h2>
 
         <img
             src="assets/images/location-divider.png"
             class="wishes-divider"
             alt=""
+            data-aos="fade-up"
+            data-aos-delay="100"
         >
 
         <form class="wishes-form">
@@ -759,32 +867,36 @@
                 type="text"
                 class="wishes-input"
                 placeholder="Your Name"
+                data-aos="fade-up"
+                data-aos-delay="150"
             >
 
             <textarea
                 class="wishes-textarea"
                 placeholder="Write your wish here.."
+                data-aos="fade-up"
+                data-aos-delay="200"
             ></textarea>
 
-            <p class="wishes-upload-label">Add photo or video?</p>
+            <p class="wishes-upload-label" data-aos="fade-up" data-aos-delay="250">Add photo or video?</p>
 
-            <label class="wishes-upload-box">
+            <label class="wishes-upload-box" data-aos="fade-up" data-aos-delay="300">
                 <span class="upload-icon">+</span>
                 <span class="upload-text">Drop files here to upload</span>
                 <input type="file" hidden>
             </label>
 
-            <button type="submit" class="wishes-send-btn">
+            <button type="submit" class="wishes-send-btn" data-aos="fade-up" data-aos-delay="350">
                 Send
             </button>
         </form>
 
-        <div class="wishes-message-preview">
+        <div class="wishes-message-preview" data-aos="fade-up" data-aos-delay="400">
             <strong>Connectied</strong>
             <p>Wishing you all of the love and happiness!</p>
         </div>
 
-        <button class="wishes-see-btn">
+        <button class="wishes-see-btn" data-aos="fade-up" data-aos-delay="450">
             See all messages
         </button>
     </div>
@@ -810,7 +922,7 @@
 
 </section>
 
-<section class="thankyou-section" data-aos="fade-up">
+<section class="thankyou-section" data-aos="fade-up" data-aos-delay="100">
 
     <!--BACKGROUND DETAIL-->
     <div class="thankyou-background-inner">
@@ -820,6 +932,8 @@
             src="assets/images/thankyou-background-kotak.png"
             class="thankyou-background-kotak"
             alt=""
+            data-aos="fade-up"
+            data-aos-delay="100"
         >
 
         <!--background fade-->
@@ -874,11 +988,11 @@
     <!--CONTENT-->
     <div class="thankyou-content">
 
-        <h2 class="thankyou-title">
+        <h2 class="thankyou-title" data-aos="fade-up" data-aos-delay="100">
             Terima Kasih
         </h2>
 
-        <p class="thankyou-text">
+        <p class="thankyou-text" data-aos="fade-up" data-aos-delay="100">
             Terima kasih atas doa restu yang Bapak/Ibu/Saudara/i berikan.<br>
             Semoga berkenan untuk hadir dan menikmati<br>
             rangkaian acara pada hari bahagia kami.
@@ -888,6 +1002,8 @@
             src="assets/images/connectied.png"
             class="connectied-logo"
             alt="Connectied"
+            data-aos="fade-up"
+            data-aos-delay="100"
         >
 
     </div>
