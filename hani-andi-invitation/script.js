@@ -102,11 +102,9 @@ $(document).ready(function () {
     // SWIPER
     const weddingSwiper = new Swiper(".weddingSwiper", {
 
-        slidesPerView: 3,
+        loop: true,
         centeredSlides: true,
         spaceBetween: 0,
-
-        loop: true,
 
         speed: 1000,
 
@@ -118,6 +116,24 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".weddingSwiper .swiper-button-next",
             prevEl: ".weddingSwiper .swiper-button-prev"
+        },
+
+        breakpoints: {
+
+            /* MOBILE */
+            0: {
+                slidesPerView: 1
+            },
+
+            /* TABLET */
+            768: {
+                slidesPerView: 2
+            },
+
+            /* DESKTOP */
+            992: {
+                slidesPerView: 3
+            }
         }
 
     });

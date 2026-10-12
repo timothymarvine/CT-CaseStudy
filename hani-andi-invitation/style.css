@@ -2385,3 +2385,1312 @@ body.hero-opened .hero-zoom-4 {
     font-size: 42px;
     font-weight: 300;
 }
+
+/* RESPONSIVE - TABLET */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* NAVBAR */
+
+    .top-navbar {
+        gap: 18px;
+        padding: 12px 20px;
+
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .top-navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .top-navbar a {
+        font-size: 14px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+
+    /* OPENING COVER */
+
+    .cover-card {
+        width: 420px;
+        max-width: 85vw;
+
+        height: 760px;
+        max-height: 92vh;
+    }
+
+    .cover-photo {
+        height: 38%;
+    }
+
+    .cover-content {
+        padding: 28px 35px 32px;
+    }
+
+    .cover-name {
+        font-size: 55px;
+    }
+
+    .cover-label {
+        font-size: 16px;
+    }
+
+    .cover-dear,
+    .cover-text {
+        font-size: 17px;
+    }
+
+    .open-invitation-btn {
+        min-width: 250px;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 720px;
+
+        padding: 80px 30px 60px;
+
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+
+        margin: 70px auto 0;
+    }
+
+
+    /* monogram */
+    .hero-monogram {
+        width: 140px;
+    }
+
+
+    /* text */
+    .hero-label {
+        font-size: 19px;
+        letter-spacing: 5px;
+    }
+
+    .hero-name {
+        font-size: 76px;
+        line-height: 1.05;
+    }
+
+    .hero-date {
+        font-size: 23px;
+        letter-spacing: 5px;
+
+        margin-top: -10px;
+    }
+
+
+    /* ornament atas kiri kanan */
+    .flower-side {
+        width: 360px;
+
+        top: -70px;
+    }
+
+    .flower-side-left {
+        left: -100px;
+    }
+
+    .flower-side-right {
+        right: -100px;
+    }
+
+
+    /* ornament tengah */
+    .ornament-hanging {
+        width: 360px;
+
+        top: -70px;
+
+        left: 0;
+        right: 0;
+
+        margin: 0 auto;
+    }
+
+
+    /* side patterns */
+    .side-pattern {
+        height: 150%;
+
+        opacity: 0.22;
+    }
+
+    .side-pattern-left {
+        left: 15px;
+    }
+
+    .side-pattern-right {
+        right: 15px;
+    }
+
+
+    /* bunga bawah */
+    .hero-flower-left,
+    .hero-flower-right {
+        width: 290px;
+    }
+
+    .hero-flower-left {
+        left: -100px;
+        bottom: -45px;
+    }
+
+    .hero-flower-right {
+        right: -100px;
+        bottom: -55px;
+    }
+
+
+    /* QUOTE */
+
+    .quote-section {
+        min-height: 480px;
+
+        padding: 90px 35px;
+
+        margin-top: -30px;
+    }
+
+    .quote-content {
+        max-width: 680px;
+    }
+
+    .quote-content p {
+        font-size: 23px;
+        line-height: 1.5;
+    }
+
+    .quote-content span {
+        font-size: 21px;
+    }
+
+    .quote-bg {
+        top: 85px;
+
+        height: calc(100% - 170px);
+    }
+
+
+    /* COUPLE / THE WEDDING */
+
+    .couple-section {
+        min-height: auto;
+
+        padding:
+            180px
+            50px
+            150px;
+
+        overflow: hidden;
+    }
+
+    .couple-content {
+        width: 100%;
+        max-width: 850px;
+    }
+
+    .bismillah-image {
+        width: 190px;
+    }
+
+    .couple-greeting {
+        font-size: 19px;
+    }
+
+    .couple-intro {
+        font-size: 22px;
+        line-height: 1.45;
+
+        margin-bottom: 45px;
+    }
+
+    .couple-grid {
+        grid-template-columns: 1fr auto 1fr;
+
+        gap: 35px;
+
+        width: 100%;
+        max-width: 760px;
+
+        margin: 0 auto 55px;
+    }
+
+
+    /* foto */
+    .person-photo-frame {
+        width: 175px;
+        height: 230px;
+    }
+
+
+    /* nama */
+    .person-name {
+        font-size: 48px;
+        line-height: 1.05;
+    }
+
+    .person-degree-inline {
+        font-size: 26px;
+
+        white-space: normal;
+    }
+
+
+    /* orang tua */
+    .person-parent {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+
+    /* ampersand */
+    .couple-symbol {
+        font-size: 65px;
+
+        margin-top: 80px;
+    }
+
+
+    .couple-closing {
+        font-size: 22px;
+    }
+
+    .couple-closing-greeting {
+        font-size: 19px;
+    }
+
+
+    /* ornament atas */
+    .couple-ornament-top {
+        width: 155%;
+
+        top: -100px;
+
+        opacity: 0.4;
+    }
+
+
+    /* bunga bawah */
+    .couple-flower-left,
+    .couple-flower-right {
+        width: 330px;
+
+        bottom: -120px;
+    }
+
+    .couple-flower-left {
+        left: -180px;
+    }
+
+    .couple-flower-right {
+        right: -180px;
+    }
+
+
+    .couple-side-pattern {
+        height: 85%;
+
+        opacity: 0.22;
+    }
+
+    .couple-side-left {
+        left: 15px;
+    }
+
+    .couple-side-right {
+        right: 15px;
+    }
+
+
+    /* COUNTDOWN */
+
+    .countdown-section {
+        min-height: 340px;
+
+        padding:
+            90px
+            30px;
+    }
+
+    .countdown-date {
+        font-size: 38px;
+
+        letter-spacing: 5px;
+
+        margin-bottom: 25px;
+    }
+
+    .countdown-wrapper {
+        gap: 14px;
+    }
+
+    .countdown-box {
+        width: 76px;
+        height: 78px;
+    }
+
+    .countdown-number {
+        font-size: 31px;
+    }
+
+    .countdown-label {
+        font-size: 14px;
+    }
+
+
+    /* LOCATION */
+
+    .location-section {
+        min-height: 900px;
+
+        padding:
+            120px
+            40px
+            130px;
+    }
+
+    .location-content {
+        max-width: 760px;
+    }
+
+    .location-title {
+        font-size: 72px;
+
+        margin-bottom: 25px;
+    }
+
+    .location-divider {
+        width: 180px;
+    }
+
+    .location-image {
+        width: 420px;
+        max-width: 75%;
+    }
+
+    .location-name {
+        font-size: 26px;
+    }
+
+    .location-address {
+        font-size: 19px;
+    }
+
+    .location-button {
+        font-size: 17px;
+    }
+
+
+    /* schedule */
+    .location-schedule {
+        gap: 60px;
+    }
+
+    .schedule-item h4 {
+        font-size: 22px;
+    }
+
+    .schedule-item p {
+        font-size: 18px;
+    }
+
+
+    /* flowers */
+    .location-flower-top,
+    .location-flower-bottom {
+        width: 500px;
+    }
+
+    .location-flower-top-left,
+    .location-flower-bottom-left {
+        left: -190px;
+    }
+
+    .location-flower-top-right,
+    .location-flower-bottom-right {
+        right: -190px;
+    }
+
+    .location-side-pattern {
+        height: 80%;
+
+        opacity: 0.22;
+    }
+
+
+    /* SWIPER / GALLERY */
+
+    .weddingSwiper {
+        height: 520px;
+    }
+
+    .weddingSwiper .swiper-button-prev,
+    .weddingSwiper .swiper-button-next {
+        width: 45px;
+        height: 45px;
+    }
+
+    .weddingSwiper .swiper-button-prev::after,
+    .weddingSwiper .swiper-button-next::after {
+        font-size: 34px;
+    }
+
+
+    /* GALLERY BOTTOM + RSVP */
+
+
+    .gallery-bottom {
+        grid-template-columns: 1fr 1fr;
+
+        min-height: 650px;
+    }
+
+    .gallery-large-wrapper {
+        height: 650px;
+    }
+
+    .rsvp-panel {
+        height: 650px;
+
+        padding:
+            30px
+            24px;
+    }
+
+    .rsvp-content {
+        max-width: 430px;
+    }
+
+
+    /* RSVP typography */
+    .rsvp-title {
+        font-size: 52px;
+    }
+
+    .rsvp-name {
+        font-size: 21px;
+    }
+
+    .rsvp-description {
+        font-size: 17px;
+    }
+
+    .rsvp-label {
+        font-size: 18px;
+    }
+
+
+    /* RSVP buttons */
+    .rsvp-choice {
+        gap: 10px;
+    }
+
+    .rsvp-button {
+        min-width: 80px;
+
+        padding:
+            8px
+            14px;
+    }
+
+    .rsvp-events {
+        gap: 8px;
+
+        flex-wrap: wrap;
+    }
+
+    .rsvp-event {
+        min-width: 82px;
+
+        padding:
+            7px
+            12px;
+    }
+
+    .guest-count-wrapper {
+        gap: 28px;
+    }
+
+
+    /* pattern RSVP */
+    .rsvp-pattern {
+        width: 190%;
+    }
+
+
+    /* WEDDING WISHES */
+
+    .wishes-section {
+        min-height: 1000px;
+
+        padding:
+            145px
+            60px
+            160px;
+    }
+
+    .wishes-content {
+        width: 100%;
+        max-width: 580px;
+
+        top: 20px;
+    }
+
+    .wishes-title {
+        font-size: 50px;
+    }
+
+
+    /* decoration */
+    .wishes-mix-ornament {
+        width: 135%;
+
+        left: 50%;
+    }
+
+    .wishes-flower {
+        width: 330px;
+    }
+
+    .wishes-flower-top-left {
+        left: -100px;
+
+        top: -310px;
+    }
+
+    .wishes-flower-top-right {
+        right: -100px;
+
+        top: -310px;
+    }
+
+    .wishes-bottom {
+        width: 430px;
+    }
+
+    .wishes-bottom-left {
+        left: -160px;
+    }
+
+    .wishes-bottom-right {
+        right: -160px;
+    }
+
+    .wishes-middle-ornament {
+        width: 400px;
+    }
+
+    .wishes-side-pattern {
+        height: 85%;
+
+        opacity: 0.22;
+    }
+
+
+    /* wishes form */
+    .wishes-input,
+    .wishes-textarea,
+    .wishes-upload-box {
+        width: 100%;
+    }
+
+
+    /* THANK YOU */
+
+    .thankyou-section {
+        min-height: 580px;
+
+        padding:
+            140px
+            35px
+            80px;
+
+        margin-top: -70px;
+    }
+
+    .thankyou-content {
+        max-width: 650px;
+
+        padding:
+            0
+            30px;
+    }
+
+    .thankyou-title {
+        font-size: 54px;
+    }
+
+    .thankyou-text {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .connectied-logo {
+        width: 95px;
+
+        margin-top: 75px;
+    }
+
+
+    /* flowers thankyou */
+    .thankyou-flower {
+        width: 320px;
+    }
+
+    .thankyou-flower-left {
+        left: -170px;
+
+        top: 350px;
+    }
+
+    .thankyou-flower-right {
+        right: -170px;
+
+        top: 350px;
+    }
+
+    .thankyou-pattern-bottom {
+        width: 115%;
+
+        bottom: -80px;
+    }
+}
+
+/* MOBILE - RESPONSIVE */
+
+@media (max-width: 767px) {
+
+    .hero-section {
+        width: 100%;
+
+        min-height: 650px;
+
+        padding:
+            90px
+            15px
+            60px;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* BACKGROUND */
+    .hero-background-kotak,
+    .hero-background-fade {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .flower-side {
+        width: 230px;
+
+        top: -45px;
+
+        opacity: 0.85;
+    }
+
+    .flower-side-left {
+        left: -100px;
+    }
+
+    .flower-side-right {
+        right: -100px;
+    }
+
+    .ornament-hanging {
+        width: 260px;
+
+        top: -40px;
+
+        left: 0;
+        right: 0;
+
+        margin: 0 auto;
+
+        z-index: 8;
+    }
+
+
+    /* SIDE PATTERN */
+
+    .side-pattern {
+        top: 50%;
+
+        height: 120%;
+
+        opacity: 0.18;
+    }
+
+    .side-pattern-left {
+        left: 5px;
+    }
+
+    .side-pattern-right {
+        right: 5px;
+    }
+
+
+    /* HERO CONTENT */
+
+    .hero-content {
+        width: 100%;
+        max-width: 360px;
+
+        margin: 90px auto 0;
+
+        padding: 0 15px;
+
+        text-align: center;
+    }
+
+
+    /* monogram */
+    .hero-monogram {
+        width: 115px;
+
+        margin: 0 auto 20px;
+    }
+
+
+    /* THE WEDDING OF */
+    .hero-label {
+        font-size: 14px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* Hani & Andi */
+    .hero-name {
+        font-size: 52px;
+
+        line-height: 1;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* tanggal */
+    .hero-date {
+        font-size: 18px;
+
+        letter-spacing: 4px;
+
+        margin-top: 0;
+    }
+
+
+    /* BUNGA BAWAH */
+
+    .hero-flower-left,
+    .hero-flower-right {
+        width: 190px;
+
+        opacity: 0.8;
+
+        z-index: 6;
+    }
+
+    .hero-flower-left {
+        left: -85px;
+        bottom: -30px;
+    }
+
+    .hero-flower-right {
+        right: -85px;
+        bottom: -30px;
+    }
+
+    /* NAVBAR */
+
+    .top-navbar {
+        padding: 10px 12px;
+        gap: 16px;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        background: rgba(223, 118, 45, 0.95);
+    }
+
+    .top-navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .top-navbar a {
+        font-size: 12px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+
+    /* COUPLE SECTION */
+
+    .couple-section {
+        width: 100%;
+
+        min-height: auto;
+
+        padding:
+            140px
+            20px
+            120px;
+
+        margin-top: -40px;
+
+        overflow: hidden;
+    }
+
+
+    .couple-background-kotak,
+    .couple-background-fade {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .couple-ornament-top {
+        width: 180%;
+        top: -50px;
+
+        opacity: 0.3;
+    }
+
+
+    .couple-side-pattern {
+        height: 85%;
+        opacity: 0.18;
+    }
+
+    .couple-side-left {
+        left: 5px;
+    }
+
+    .couple-side-right {
+        right: 5px;
+    }
+
+
+    .couple-flower-left,
+    .couple-flower-right {
+        width: 220px;
+
+        bottom: -40px;
+
+        opacity: 0.55;
+    }
+
+    .couple-flower-left {
+        left: -110px;
+    }
+
+    .couple-flower-right {
+        right: -110px;
+    }
+
+
+    /* CONTENT */
+
+    .couple-content {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 0 8px;
+    }
+
+    .bismillah-image {
+        width: 150px;
+    }
+
+    .couple-greeting {
+        font-size: 17px;
+    }
+
+    .couple-intro {
+        font-size: 18px;
+        line-height: 1.4;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* BRIDE & GROOM */
+
+    .couple-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto 45px;
+    }
+
+    .person-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* foto */
+    .person-photo-frame {
+        width: 160px;
+        height: 210px;
+
+        margin: 0 auto 18px;
+    }
+
+
+    /* nama */
+    .person-name {
+        font-size: 42px;
+        line-height: 1;
+
+        padding: 0 10px;
+    }
+
+    .person-degree-inline {
+        font-size: 23px;
+        white-space: normal;
+    }
+
+
+    /* orang tua */
+    .person-parent {
+        font-size: 18px;
+        line-height: 1.4;
+
+        margin-top: 18px;
+        padding: 0 12px;
+    }
+
+
+    /* tanda & */
+    .couple-symbol {
+        font-size: 55px;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    /* closing */
+    .couple-closing {
+        font-size: 18px;
+        line-height: 1.45;
+
+        padding: 0 10px;
+        margin-top: 35px;
+    }
+
+    .couple-closing-greeting {
+        font-size: 17px;
+        line-height: 1.4;
+
+        padding: 0 10px;
+    }
+
+    /* GALLERY + RSVP */
+
+    .gallery-rsvp-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .gallery-rsvp-inner {
+        width: 100%;
+    }
+
+    .gallery-bottom {
+        display: block !important;
+        width: 100%;
+        min-height: auto;
+    }
+
+    /* FOTO BESAR */
+    .gallery-large-wrapper {
+        display: block;
+        width: 100% !important;
+        height: 430px;
+    }
+
+    .gallery-large-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    /* RSVP */
+    .rsvp-panel {
+        width: 100% !important;
+
+        height: auto;
+        min-height: 700px;
+
+        padding: 60px 25px;
+
+        box-sizing: border-box;
+    }
+
+    .rsvp-content {
+        width: 100%;
+        max-width: 430px;
+
+        margin: 0 auto;
+    }
+
+    .rsvp-title {
+        font-size: 52px;
+    }
+
+    .rsvp-name {
+        font-size: 21px;
+    }
+
+    .rsvp-description {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+
+    /* Hadir / tidak hadir */
+    .rsvp-choice {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .rsvp-button {
+        min-width: 105px;
+        padding: 10px 18px;
+    }
+
+
+    /* pilihan acara */
+    .rsvp-events {
+        display: flex !important;
+
+        justify-content: center !important;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .rsvp-event {
+        min-width: 105px;
+    }
+
+
+    /* jumlah tamu */
+    .guest-count-wrapper {
+        display: flex !important;
+
+        justify-content: center !important;
+
+        gap: 30px;
+
+        flex-wrap: wrap;
+    }
+
+
+
+    /* WEDDING WISHES */
+
+    .wishes-section {
+        width: 100%;
+
+        min-height: auto;
+
+        padding:
+            120px
+            20px
+            130px;
+
+        overflow: hidden;
+    }
+
+
+    .wishes-content {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        top: 0;
+    }
+
+
+    .wishes-title {
+        font-size: 44px;
+    }
+
+
+    /* ornament campuran atas */
+    .wishes-mix-ornament {
+        top: 0;
+
+        left: 50%;
+
+        width: 150%;
+
+        transform: translateX(-50%);
+    }
+
+    .wishes-flower,
+    .wishes-middle-ornament,
+    .wishes-bottom {
+        display: none;
+    }
+
+
+    /* side pattern dibuat lebih samar */
+    .wishes-side-pattern {
+        height: 90%;
+
+        opacity: 0.15;
+    }
+
+    .wishes-side-left {
+        left: 5px;
+    }
+
+    .wishes-side-right {
+        right: 5px;
+    }
+
+
+    /* FORM */
+    .wishes-form {
+        width: 100%;
+    }
+
+    .wishes-input,
+    .wishes-textarea,
+    .wishes-upload-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .wishes-input,
+    .wishes-textarea {
+        font-size: 16px;
+    }
+
+
+
+    /* THANK YOU */
+
+    .thankyou-section {
+        width: 100%;
+
+        min-height: 600px;
+
+        padding:
+            130px
+            25px
+            80px;
+
+        margin-top: -50px;
+
+        overflow: hidden;
+    }
+
+
+    .thankyou-content {
+        width: 100%;
+        max-width: 420px;
+
+        margin: 0 auto;
+
+        padding: 0 15px;
+    }
+
+
+    .thankyou-title {
+        font-size: 48px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .thankyou-text {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+
+    .thankyou-text br {
+        display: none;
+    }
+
+
+    .thankyou-flower {
+        width: 180px;
+
+        opacity: 0.65;
+
+        z-index: 3;
+    }
+
+    .thankyou-flower-left {
+        left: -105px;
+        top: 350px;
+    }
+
+    .thankyou-flower-right {
+        right: -105px;
+        top: 350px;
+    }
+
+
+    .connectied-logo {
+        width: 90px;
+
+        margin-top: 80px;
+    }
+
+
+    /* pattern bawah */
+    .thankyou-pattern-bottom {
+        width: 150%;
+
+        bottom: -40px;
+    }
+}
